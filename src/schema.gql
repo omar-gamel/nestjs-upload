@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Upload custom scalar type"""
+scalar Upload
+
+type Query {
+  sayHello: String!
+}
+
+type Mutation {
+  uploadFile(file: Upload, model: FileModelEnum): String!
+}
+
+enum FileModelEnum {
+  CONSULTANT_ATTACHMENTS
+}
